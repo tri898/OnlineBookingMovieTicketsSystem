@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @await Html.PartialAsync("~/Areas/Admin/Views/_HeadPartial.cshtml")
+    @RenderSection("css", required: false)
+</head>
+<body>
+    @await Html.PartialAsync("~/Areas/Admin/Views/_HeaderPartial.cshtml")
+    <div class="breadcrumb">
+        @RenderBody()
+    </div>
+</body>
+@await Html.PartialAsync("~/Areas/Admin/Views/_FooterPartial.cshtml")
+@RenderSection("Scripts", required: false)
+</html>

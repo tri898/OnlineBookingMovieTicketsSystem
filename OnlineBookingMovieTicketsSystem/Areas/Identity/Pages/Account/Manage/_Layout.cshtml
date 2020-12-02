@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    @await Html.PartialAsync("~/Areas/Identity/Pages/_HeadPartial.cshtml")
+    @RenderSection("css", required: false)
+</head>
+<body>
+    @await Html.PartialAsync("~/Areas/Identity/Pages/_HeaderPartial.cshtml")
+    <div class="page-wrapper">
+        <div class="page-breadcrumb">
+            <h2>Manage your account</h2>
+
+            <div>
+                <h4>Change your account settings</h4>
+                <hr />
+
+
+                @RenderBody()
+            </div>
+
+        </div>
+    </div>
+</body>
+@await Html.PartialAsync("~/Areas/Identity/Pages/_FooterPartial.cshtml")
+@RenderSection("Scripts", required: false)
+</html>
